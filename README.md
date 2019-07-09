@@ -2,7 +2,7 @@
 
 This project focuses on the creation of the single page app in JavaScript in a TDD manner, but without the use of testing framework. All the test have been created manually.
 
-*** User Stories ***
+**User Stories**
 
 ```
 As a programmer
@@ -23,6 +23,6 @@ So I can see all the information in the note
 ```
 (NB: notes do not need to be permanently stored. If the user refreshes their web page, they'll lose their notes, and that's fine.)
 
-*** Model Diagram ***
+**Model Diagram**
 
 insert picture here
