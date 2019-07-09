@@ -5,15 +5,15 @@ function testShowAllNotes() {
 };
 testShowAllNotes();
 
-function testCreatelNote() {
+function testCreatelNoteSeeContent() {
   var notelist = new NoteList()
   assert.isTrue(notelist.createNote("Hi Ruth") == "Hi Ruth")
 };
-testCreatelNote();
+testCreatelNoteSeeContent();
 
-function testCreatelNote() {
+function testCreateNote() {
   var notelist = new NoteList()
   notelist.createNote('Hi Ruth')
   assert.isTrue(notelist.showAllNotes().length == 1)
 };
-testCreatelNote();
+testCreateNote();
