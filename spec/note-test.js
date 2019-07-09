@@ -14,3 +14,8 @@
     assert.isTrue(note.text === "test note");
   };
   testNoteInitialization();
+
+  function showAllNotes() {
+  var notelist = new NoteList
+  assert.isTrue(notelist.showAllNotes() === [])
+  }
