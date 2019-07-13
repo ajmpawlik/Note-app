@@ -2,16 +2,15 @@
   function NoteListView(noteList){
     this.noteList = noteList;
     this.getNotesHtmlList = function(){
-      var resultList = "<ul>"
-       this.noteList.showAllNotes().forEach(function(item) {
-         resultList = resultList +'<li><div>' + item.text + "</div></li>";
+      var shelf = []
+      var resultList1 = "<ul>"
+      this.noteList.showAllNotes().forEach(function(item) {
+         shelf.push('<li><div>' + item.text + "</div></li>");
       });
-      resultList = resultList + "</ul>"
-      console.log(resultList);
-      return resultList
-      //return(`<ul><li><div>${item.text}</div></li></ul>`);
-      // <ul><li><div>notelist.allNotes.join</div></li><li>
-      // <div>Favourite drink: seltzer</div></li></ul>
+
+      var resultList2 = shelf.join("")
+      var resultList3 = "</ul>"
+      return resultList1 + resultList2 + resultList3
     }
   }
   exports.NoteListView = NoteListView;
