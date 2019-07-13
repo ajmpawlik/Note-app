@@ -7,11 +7,9 @@
 
 function testView() {
   var noteList = new NoteList()
-  console.log(noteList.createNote("I like books"))
-  console.log(noteList)
+  noteList.createNote("I like books")
   var noteListView = new NoteListView(noteList)
-  console.log(noteListView.getNotesHtmlList())
-  assert.isTrue(noteListView.getNotesHtmlList() == "I like books")
+  assert.isTrue(noteListView.getNotesHtmlList() == "<ul><li><div>I like books</div></li></ul>")
 };
 testView();
 
