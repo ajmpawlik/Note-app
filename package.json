@@ -1,0 +1,22 @@
+{
+  "name": "notes_app",
+  "version": "1.0.0",
+  "description": "This project focuses on the creation of the single page app in JavaScript in a TDD manner, but without the use of testing framework. All the test have been created manually.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajmpawlik/Note-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajmpawlik/Note-app/issues"
+  },
+  "homepage": "https://github.com/ajmpawlik/Note-app#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
