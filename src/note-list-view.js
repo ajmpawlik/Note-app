@@ -5,7 +5,7 @@
       var shelf = []
       var resultList1 = "<ul>"
       this.noteList.showAllNotes().forEach(function(item) {
-         shelf.push('<li><div>' + item.text + "</div></li>");
+         shelf.push("<li><div>" + item.text + "</div></li>");
       });
 
       var resultList2 = shelf.join("")
