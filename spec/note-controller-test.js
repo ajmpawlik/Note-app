@@ -17,11 +17,12 @@
 function TestNoteController2() {
   var noteList = new NoteList
   noteList.createNote("I like books")
+  noteList.createNote("I like writing code")
   var noteController = new NoteController(noteList)
   var html = noteController.displayNoteListView()
   console.log(noteController.noteList.showAllNotes()[0].text)
   assert.isTrue(noteController.noteList.showAllNotes()[0].text == "I like books")
-  assert.isTrue(noteController.displayNoteListView() == "<ul><li><div>I like books</div></li></ul>")
+  assert.isTrue(noteController.displayNoteListView() == "<ul><li><div>I like books</div></li><li><div>I like writing code</div></li></ul>")
   console.log(html);
 }
 TestNoteController2();
